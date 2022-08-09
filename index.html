@@ -1,81 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html practice</title>
-</head>
-<body>
-    <!--heading-->
-    <h1 style="color:blue;font-weight: bolder;text-align: center;">Hello world</h1>
-    <h1>I am heading one</h1>
-    <h2>I am heading two</h2>
-    <h3>I am heading three</h3>
-    <h4>I am heading four</h4>
-    <h5>I am heading five</h5>
-    <h6>I am heading six</h6>
-    <p style="padding:50px;text-transform: uppercase">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-         Distinctio, fugiat corporis sunt eaque eveniet minus et debitis
-          labore suscipit nulla rem cupiditate nostrum rerum vel commodi quod 
-          quae, incidunt reprehenderit?</p>
-        <hr width="50%">
-        <p style="color:brown;font-size:xx-large">I will master wed programing using <code>HTML</code>for my structure, <code>CSS</code>for styling and <code>js</code>for instructions</p>
-        <p>I will master web programming using <abbr title="Hyper Test Markup Language">HTML</abbr>for structure,<abbr title="Cascading Style Sheet ">CSS</abbr>for styling and <abbr title="Javascript">js</abbr>for instructions
-        </p>
-        <p> I will master programming using <mark></mark>for my structure, <mark>CSS</mark>for styling and <mark>js</mark>for instructions</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo2"></p>
+    <p id="demo">Hello world</p>
+    <button onclick="myFunc()">change value</button>
 
-<!--ordered list-->
-<h3>Important web technologies</h3>
-<ol type="A">
-<li>HyperText Markup Language</li>
-<li>Cascading Style Sheet</li>
-<li>Javascript</li>
+    <p id="check" style="color: red" ;>check my new color</p>
+    <button onclick="myColor()">my color</button>
+    <p id="demo2"></p>
 
-<!--unordered list-->
-<h3>Important web technologies</h3>
-<ul>
-    <li>HyperText Markup Language</li>
-    <li>Cascading Style Sheet</li>
-    <li>Javascript</li>
-    </ul>
-    <!--table element-->
-    <table>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Education</th>
-                <th>skills</th>
-
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Saqib</td>
-                <td>SHS</td>
-                <td>A footballer</td>
-                </tr>
-                <tr></tr>
-                    <td>Adams</td>
-                    <td>JHS</td>
-                    <td>A player</td>
-                </tr>
-                <tr></tr>
-                    <td>Atif</td>
-                    <td>Tertiary</td>
-                    <td>A software developer</td>
-                </tr>
-                </tbody>
-                </table>
-    </table>
-    
-        
-                
-                
-
-
-
-    
-</body>
+    <script>
+      function myFunc() {
+        document.getElementById("demo").innerHTML = "Hello everyone";
+      }
+      const num = 5;
+      const Num = 6;
+      const sum = num + Num;
+      document.write(sum);
+    </script>
+    <script src="./main.js"></script>
+  </body>
 </html>
